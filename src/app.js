@@ -4,7 +4,7 @@ const app = express();
 app.use(express.static("public"));
 
 app.get("/test", (_req, res) => {
-  res.status(200).send("Hello world");
+  res.status(200).send("Hello world 123");
 });
 
 app.get("/", (req, res) => {
