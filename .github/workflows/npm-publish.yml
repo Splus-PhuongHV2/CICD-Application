@@ -19,6 +19,7 @@ jobs:
       with:
             fetch-depth: 0
             ref: main
+            path: ~/CICD-Application/
     - run: cat src/app.js
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
