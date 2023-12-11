@@ -8,4 +8,9 @@ describe("/test endpoint", () => {
     expect(response.status).toBe(200);
     expect(response.text).toBe("Hello world 123");
   });
+  
+  it("should handle invalid routes and return a 404 status", async () => {
+    const response = await request.get("/invalid-route");
+    expect(response.status).toBe(404);
+  });
 });
